@@ -24,7 +24,7 @@ function Questions() {
         console.log(orderID,email,age,mobile,role);
         await axios({
       method: 'post',
-      url: `http://localhost:3000/question/${id}`,
+      url: `https://return-1.onrender.com/question/${id}`,
       data: {orderID,email,age,mobile,role}
     }).then(res => {  
         console.log(res);

@@ -18,7 +18,7 @@ function QRPage() {
 setInterval(async()=>{
   await axios({
       method: 'get',
-      url: `http://localhost:3000/response/${id.toString()}`,
+      url: `https://return-1.onrender.com/response/${id.toString()}`,
     }).then(res => {  
         console.log(res);
         setSubmited(res.data.submitted);
@@ -40,8 +40,8 @@ setInterval(async()=>{
         <h2 className="text-muted my-5">
           Customers, scan the following qr code
         </h2>
-        {/* <QRCode value={`http://localhost:3000/questions/${id}`} size="150" /> */}
-        <QRCode value={`jagajith23.github.io`} size="150" />
+        <QRCode value={`https://return-1.onrender.com/questions/${id}`} size="150" />
+        {/* <QRCode value={`jagajith23.github.io`} size="150" /> */}
       </div> :
       <div>
       <h2 className="text-muted my-5">
